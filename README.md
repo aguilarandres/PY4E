@@ -1,1 +1,3 @@
-# PY4E
+PY4E
+
+Python for Everybody exercises
