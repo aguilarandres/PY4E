@@ -8,7 +8,11 @@ total = 0
 value = 0
 
 file = input("Enter file name: ")
-handle = open(file)
+try:
+  handle = open(file)
+except:
+  print("file could not be opened:", file)
+  quit()
 for line in handle:
     if not line.startswith(target):
         continue
