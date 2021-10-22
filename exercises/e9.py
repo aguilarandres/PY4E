@@ -19,6 +19,7 @@ for line in file_handle :
     names.append(data[1])
 
 for name in names:
+  # use get() to provide a default value of zero when key is not yet in dictionary - and then add one
   counts[name] = counts.get(name, 0) + 1
 
 prolific = None
