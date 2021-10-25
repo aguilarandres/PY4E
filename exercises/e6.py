@@ -1,7 +1,6 @@
-# Write a program that prompts for a file name, then opens that file and reads
-# through the file, looking for lines of the form:
-# X-DSPAM-Confidence:    0.8475
-# Use the file name mbox-short.txt as the file name
+"""
+Write a program that prompts for a file name, then opens that file and reads through the file, looking for lines of the form: X-DSPAM-Confidence:    0.8475 Use the file name mbox-short.txt as the file name
+"""
 
 target = "X-DSPAM-Confidence:"
 total = 0
