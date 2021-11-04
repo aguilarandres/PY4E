@@ -29,7 +29,7 @@ while True:
 
 while True:
   try:
-    position = int( input('Enter position: ') )
+    position = int( input('Enter position: ') ) - 1
   except ValueError:
     print(msg_invalid_integer_value)
     continue
@@ -41,5 +41,5 @@ while count >= 0:
   soup  = BeautifulSoup(html, 'html.parser')
   tags  = soup('a')
   print('Retreiving: ', url)
-  url   = tags[position - 1].get('href', None)
+  url   = tags[position].get('href', None)
   count -= 1
