@@ -20,11 +20,4 @@ soup = BeautifulSoup(html, "html.parser")
 # Retrieve all of the <span> tags
 tags = soup('span')
 
-# for tag in tags:
-    # Look at the parts of a tag
-    # print('TAG:', tag)
-    # print('URL:', tag.get('href', None))
-    # print('Contents:', int(tag.contents[0]) )
-    # print('Attrs:', tag.attrs)
-
-print( sum([int(tag.contents[0]) for tag in tags]) ) 
+print( sum([int(tag.contents[0]) for tag in tags]) )
