@@ -8,13 +8,22 @@ Score Grade
 < 0.6 F
 If the user enters a value out of range, print a suitable error message and exit. For the test, enter a score of 0.85.
 """
-score = input("Enter Score: ")
+
+while True:
+  try:
+    score = float( input('Enter Score: ') )
+  except ValueError:
+    print('Error, score must be a numeric value between 0.0 - 1.0')
+    continue
+  else:
+    break
+
 # convert string to float
 _score = float(score)
 
 # check if score is between 0.0 and 1.0
 if _score < 0.0 or _score > 1.0:
-  print("Error, socre is out of range")
+  print("Error, score range must be between 0.0 - 1.0")
   exit()
 elif _score >= 0.9:
   print("A")
