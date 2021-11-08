@@ -18,20 +18,16 @@ while True:
   else:
     break
 
-# convert string to float
-_score = float(score)
-
-# check if score is between 0.0 and 1.0
-if _score < 0.0 or _score > 1.0:
+if score < 0.0 or score > 1.0:
   print("Error, score range must be between 0.0 - 1.0")
   exit()
-elif _score >= 0.9:
+elif score >= 0.9:
   print("A")
-elif _score >= 0.8:
+elif score >= 0.8:
   print("B")
-elif _score >= 0.7:
+elif score >= 0.7:
   print("C")
-elif _score >= 0.6:
+elif score >= 0.6:
   print("D")
-elif _score < 0.6:
+elif score < 0.6:
   print("F")
