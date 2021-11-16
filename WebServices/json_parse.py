@@ -22,6 +22,6 @@ json_data = json.loads(parsed_url)
 list_comments = json_data['comments']
 
 print('Retrieving', url)
-# print('Retrieved ', , ' characters')
+print('Retrieved ', len(parsed_url.decode()), ' characters')
 print( 'Count: ', len(list_comments) )
 print( 'Sum: ', sum( [comment['count'] for comment in list_comments] ) )
