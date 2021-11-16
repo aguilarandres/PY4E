@@ -24,6 +24,6 @@ root = ET.fromstring(str_comments)
 counts = root.findall('.//count')
 
 print('Retrieving', url)
-# print('Retrieved ', , ' characters')
+print('Retrieved ', len(str_comments.decode()), ' characters')
 print( 'Count: ', len(counts) )
 print( 'Sum: ', sum([int(c.text) for c in counts]) )
