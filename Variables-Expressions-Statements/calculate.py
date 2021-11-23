@@ -1,5 +1,5 @@
 """
-Program that prompts the user for hours and rate per hour to compute gorss  pay
+Program that prompts the user for hours and rate per hour to compute gorss pay
 """
 
 # store user input for hours
