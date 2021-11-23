@@ -1,12 +1,12 @@
-# To run this, download the BeautifulSoup zip file
-# http://www.py4e.com/code3/bs4.zip
-# and unzip it in the same directory as this file
+"""
+The program will use urllib to read the HTML from the data files below, and parse the data, extracting numbers and compute the sum of the numbers in the file.
+
+To run this, download the BeautifulSoup zip file http://www.py4e.com/code3/bs4.zip and unzip it in the same directory as this file
+"""
 
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import ssl
-
-# http://py4e-data.dr-chuck.net/comments_1385434.html
 
 # Ignore SSL certificate errors
 ctx = ssl.create_default_context()
